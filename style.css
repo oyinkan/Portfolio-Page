@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  list-style: none;
+  font-size: 15px;
+}
+body{
+	background-color: pink;
+}
+header {
+  color: #fff;
+}
+nav {
+  height: 80px;
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  font-weight: bold;
+}
+
+#logo {
+  padding: 10px 10px 10px 50px;
+  width: auto;
+  float: left;
+  margin-top: 10px;
+}
+.logo{
+  font-size: 35px;
+}
+
+#white{
+  color: #fff;
+}
+
+#lightblue{
+  color: #acd;
+}
+
+.list-item {
+  float: right;
+  margin-right: 25px;
+  margin-top: 17px;
+}
+
+.list-item li {
+  float: left;
+  padding: 13px 13px;
+  font-size: 18px;
+  border-radius: 3px;
+  transition: all .7s ease-in-out;
+  transition: width 2s ease-in-out;
+}
+
+.list-item li a {
+  color: blue;
+  text-transform: uppercase;
+}
+
+.list-item li:hover {
+  background-color: #ecdede;
+  width: 150px;
+  text-align: center;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .s-1 {width: 8.33%;}
+  .s-2 {width: 16.66%;}
+  .s-3 {width: 25%;}
+  .s-4 {width: 33.33%;}
+  .s-5 {width: 41.66%;}
+  .s-6 {width: 50%;}
+  .s-7 {width: 58.33%;}
+  .s-8 {width: 66.66%;}
+  .s-9 {width: 75%;}
+  .s-10 {width: 83.33%;}
+  .s-11 {width: 91.66%;}
+  .s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .m-1 {width: 8.33%;}
+  .m-2 {width: 16.66%;}
+  .m-3 {width: 25%;}
+  .m-4 {width: 33.33%;}
+  .m-5 {width: 41.66%;}
+  .m-6 {width: 50%;}
+  .m-7 {width: 58.33%;}
+  .m-8 {width: 66.66%;}
+  .m-9 {width: 75%;}
+  .m-10 {width: 83.33%;}
+  .m-11 {width: 91.66%;}
+  .m-12 {width: 100%;}
+}
+#myimage {
+	width: 50%;
+	border-radius: 5px;
+	border: 5px solid white;
+	box-shadow: 0px 0px 15px #f6f0f1;
+}
+#name {
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+}
+.right {
+	float: right;
+}
+#profession {
+    margin-left: 230px;
+    color: blue;
+    font-size: 16px;
+    padding-top: 10px;
+    line-height: 20px;
+}
+#portfolio-div{
+	padding: 50px;
+}
+.left {
+	float: left;
+}
+#first-section{
+	padding: 100px;
+}
+@media screen and (max-width: 768px) {
+	#portfolio-div{
+		padding: 0;
+	}
+	#profession {
+    	margin-left: 0;
+	}
+	#myimage {
+		width: 100%;
+		margin-top: 20px;
+	}
+}
+@media screen and (min-width: 790px) and (max-width: 1200px) {
+	#profession {
+    	margin-left: -15px;
+	}
+	#myimage {
+		width: 100%;
+	}
+}
